@@ -5,8 +5,8 @@ body {
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    border: 1px solid red;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: minmax(200px, 10%) 4fr;
     height: 100vh;
 }
 
@@ -25,6 +25,7 @@ body {
     grid-area: 1 / 2 / 1 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    height: 100px;
 
 }
 
@@ -32,23 +33,46 @@ body {
     background-color: lightgray;
     grid-area: 2 / 2 / 2 / 3;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: 3fr 1fr;
 }
 
 .projects-cont {
-    border: 1px solid red;
-    margin: 5px;
+    margin: 10px;
     display: grid;
     gap: 10px;
-    grid-template-rows: 1fr minmax(1fr, 3fr);
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.subheader {
+    border: 1px solid purple;
+    /* display: flex; */
+    grid-column: 1/-1;
+    justify-content: center;
 }
 
 .projects {
     justify-content: center;
     background-color: orange;
+    border-radius: 10px;
+    height: 100px;
+    gap: 10px;
+    grid-row: auto;
 }
 
 .sidebar {
     display: grid;
+}
+
+.rightbar {
+    border: 1px solid green;
+    display: grid;
+    gap: 30px;
+}
+
+.announcements {
+    justify-content: center;
+    background-color: orange;
+    border-radius: 10px;
 }
