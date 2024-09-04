@@ -10,31 +10,46 @@
     <body>
         <div class="layout">
             <div class="dashboard">
-                Dashboard
+                <div class="dash-header">
+                    <img class="dash-header" src="./img/icons/dashboard.svg" height="40px">Dashboard
+                </div>
+
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><img class="icon" src="./img/icons/home.svg">Home</li>
+                    <li><img class="icon" src="./img/icons/profile.svg">Profile</li>
+                    <li><img class="icon" src="./img/icons/messages.svg">Messages</li>
+                    <li><img class="icon" src="./img/icons/history.svg">History</li>
+                    <li><img class="icon" src="./img/icons/tasks.svg">Tasks</li>
+                    <li><img class="icon" src="./img/icons/communities.svg">Communities</li>
                 </ul> 
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><img class="icon" src="./img/icons/settings.svg">Settings</li>
+                    <li><img class="icon" src="./img/icons/suppport.svg">Support</li>
+                    <li><img class="icon" src="./img/icons/privacy.svg">Privacy</li>
                 </ul> 
             </div>
     
             <div class="header">
-                <div class="searchbar">[SEARCHBAR]
-                    <div class="user">Andrew Tran</div>
+                <div class="searchbar">
+                    <div class="cont">
+                        <img class = "icon" src="./img/icons/search.svg">
+                        <input class="search" type="search" id="site-search" name="q" />
+                    </div>
+                    <div class="cont">
+                        <img class="icon" src="./img/icons/notification.svg">
+                        <img class="profile" src="./img/profile/user-1.svg">
+                        <div class="user">Andrew Tran</div>
+                    </div>
                 </div>
                 <div class="profilebar">
-                    <div class="profile">
-                        <div>Hi there,</div>
-                        <img>Andrew Tran (@minglee)
+                    <div class="cont">
+                        <img src="./img/profile/user-1.svg" height="50px">
+                        <div class="profile">
+                            <div>Hi there,</div>
+                            <img>Andrew Tran (@minglee)
+                        </div>
                     </div>
+
                     <div class="buttons">
                         <button>New</button>
                         <button>Upload</button>
@@ -62,7 +77,14 @@
                         <div class="announcements">Community Share Day</div>
                         <div class="announcements">Updated Privacy Policy</div>
                     </div>
-                    <div class="subheader">Trending</div>
+
+                    <div class="trending-cont">
+                        <div class="subheader">Trending</div>
+                        <div class="trends">@palechub</div>
+                        <div class="trends">@minglee</div>
+                        <div class="trends">@meat</div>
+                        <div class="trends">@otis</div>
+                    </div>
                 </div>
                 
             </div>
