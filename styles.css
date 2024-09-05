@@ -114,20 +114,19 @@ button {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr clamp(10%, 300px, 400px);
+    padding: 0 20px;
 }
 
 .subheader {
     font-size: 1.5rem;
     font-weight: 600;
-    grid-column: 1/2;
-    margin: 10px 0;
+    margin: 10px 0 10px 0;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 10px 20px;
+.section,
+.projects,
+.announce-cont{
+    padding: 20px 20px;
 }
 
 .projects,
@@ -139,16 +138,9 @@ button {
 }
 
 .projects-cont {
-    --shadow: 7px;
     display: grid;
     grid-template-columns: repeat(auto-fill, clamp(320px, 35%, 600px));
     gap: 25px;
-    margin-left: var(--shadow);
-}
-
-.projects,
-.announce-cont{
-    padding: 20px 20px;
 }
 
 .projects {
@@ -167,11 +159,11 @@ button {
 .announce-cont,
 .announcements,
 .divider {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .divider {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(230, 228, 228);
 }
 
 .trend {
