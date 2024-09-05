@@ -70,7 +70,6 @@ body {
     background-color: white;
     align-items: center;
     padding: 10px 10px;
-    
 }
 
 .search {
@@ -85,12 +84,12 @@ body {
 .searchbar,
 .profilebar {
     display: flex;
-    margin: 0px 30px;
+    margin: 0 2rem;
+    padding: 5px 0;
     align-items: center;
 }
 
 .searchbar {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -124,23 +123,19 @@ button {
     grid-area: 2 / 2 / 2 / 3;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 3fr 1fr;
-    /* grid-template-rows: 1fr 10fr; */
+    grid-template-columns: 5fr 350px;
 }
 
 .subheader {
     font-size: 1.5rem;
-    border: 1px solid purple;
     grid-column: 1/2;
-    justify-content: center;
-    padding-bottom: 20px;
-    height: auto;
+    margin: 10px 0;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin: 10px 20px;
 }
 
 .projects,
@@ -151,11 +146,10 @@ button {
 }
 
 .projects-cont {
-    margin: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     gap: 20px;
-    height: 0;
+    margin-left: 7px;
 }
 
 .projects {
@@ -164,21 +158,14 @@ button {
     width: clamp(300px, 40%, 600px);
 }
 
-.sidebar {
-    display: grid;
-}
-
 .announce-cont {
-    margin: 10px;
     display: grid;
-    border: 1px 0 solid red;
-    /* height: 0; */
+    margin-bottom: 20px;
 }
 
 .announcements {
     border-top: 1px dashed green;
     height: 100px;
-    width: 250px;
 }
 
 .trending-cont {
